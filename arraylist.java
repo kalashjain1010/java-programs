@@ -1,19 +1,18 @@
-import java.util.ArrayList;
+ import java.util.*;
 
 public class arraylist {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+    ArrayList<String> cars = new ArrayList<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars);
+    cars.set(0, "kalash");
+    Collections.sort(cars);
 
-        ArrayList<Integer> number = new ArrayList<Integer>();
-        number.add(1);
-        number.add(5);
-        number.add(2);
-        number.add(1,10);
-        number.set(0, 3);
+     System.out.println(cars);
 
-        for (int i = 0; i < number.size(); i++) {
-
-            System.out.println(" " + number.get(i));
-        }
-    }
+  }
 }
 

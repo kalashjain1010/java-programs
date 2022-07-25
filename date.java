@@ -1,9 +1,8 @@
-import java.util.Date;
-import javax.swing.JOptionPane;
+import java.time.*; // import the LocalDate class
 
 public class date {
-    public static void main(String[] args){
-
-        JOptionPane.showMessageDialog(null, new Date());
-    }
+  public static void main(String[] args) {
+    LocalDate myObj = LocalDate.now(); // Create a date object
+    System.out.println(myObj); // Display the current date
+  }
 }
